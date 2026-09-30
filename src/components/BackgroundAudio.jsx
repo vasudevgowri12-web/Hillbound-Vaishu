@@ -65,7 +65,7 @@ const BackgroundAudio = forwardRef((props, ref) => {
     <audio
       ref={audioRef}
       src={themeSong}
-      preload="auto"
+      preload="none"
       loop
       onEnded={handleEnded}
       style={{ display: 'none' }}
