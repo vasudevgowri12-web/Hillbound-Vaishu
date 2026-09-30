@@ -11,7 +11,7 @@ const BackgroundAudio = forwardRef((props, ref) => {
     if (!audio) return
     try {
       audio.muted = false
-      audio.volume = 0.15
+      audio.volume = 0.12
       const promise = audio.play()
       if (promise !== undefined) {
         await promise
@@ -57,7 +57,7 @@ const BackgroundAudio = forwardRef((props, ref) => {
     const audio = audioRef.current
     if (!audio) return
 
-    audio.volume = 0.15
+    audio.volume = 0.12
     audio.loop = true
 
     const unlockAudio = () => {
